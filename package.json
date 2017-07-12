@@ -1,0 +1,23 @@
+{
+  "name": "easemob-api",
+  "version": "1.0.0",
+  "description": "Using nodejs to access API, provide users client example code.",
+  "config": {
+    "host": "a1.easemob.com"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "form-data": "^2.1.1",
+    "httpx": "^2.1.1",
+    "node-fetch": "^1.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "hdumok",
+  "license": "ISC"
+}
