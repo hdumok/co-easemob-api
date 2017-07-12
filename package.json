@@ -1,5 +1,5 @@
 {
-  "name": "easemob-api",
+  "name": "co-easemob-api",
   "version": "1.0.0",
   "description": "环信公共平台Node库API，ES6版本",
   "config": {
