@@ -1,9 +1,40 @@
 # co-easemob-api
 
+
+## Installation
+
+```sh
+$ npm install co-easemob-api
+```
+
+## Usage
+
+```js
+var EasemobApi = require('co-easemob-api');
+
+var api = new EasemobApi(org_name, app_name, client_id, client_secret);
+var result = yield api.createUser(user);
+```
+
+### 多进程
+当多进程时，token需要全局维护，以下为保存token的接口：
+
+```js
+var api = new API(org_name, app_name, client_id, client_secret, function* () {
+  // 传入一个获取全局token的方法
+  var txt = yield fs.readFile('token.txt', 'utf8');
+  return JSON.parse(txt);
+}, function* (token) {
+  // 请将token存储到全局，跨进程、跨机器级别的全局，比如写到数据库、redis等
+  // 这样才能在cluster模式及多机情况下使用，以下为写入到文件的示例
+  yield fs.writeFile('token.txt', JSON.stringify(token));
+});
+```
+
 ## TODO
 - 参数处理
 - 接口遍历测试
-
+- 错误处理
 
 ## 错误
 - HTTP 返回码（Status Code）	说明（Description）
