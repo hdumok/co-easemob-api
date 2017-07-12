@@ -1,4 +1,4 @@
-# easemob-api
+# co-easemob-api
 
 ## TODO
 - 参数处理
