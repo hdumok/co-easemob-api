@@ -1,6 +1,6 @@
 {
   "name": "co-easemob-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "环信公共平台Node库API，ES6版本",
   "config": {
     "host": "a1.easemob.com"
